@@ -1,0 +1,210 @@
+/* CHECK FONT  https://fonts.google.com/specimen/Roboto?query=roboto*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    /* set default font-size */
+    line-height: 1.5;
+}
+
+.header {
+    background-color: #1f2937;
+}
+
+.header .container {
+    display: flex;
+    padding: 40px 100px;
+    justify-content: space-between;
+    }
+
+.headerlogo {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.headerlinks {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.headerlinks a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* INCREASE PADDING AT BOTTOM OF SECTION */
+.hero {
+    background-color: #1f2937;
+}
+
+.hero .container {
+    display: flex;
+    /* SET MEDIA TO CONVERT TO COLUMN BELOW X WIDTH */
+    padding: 20px 100px;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.hero .container .hero-main-text {
+    flex: 1;
+    /* REVISIT FLEX PROPERTY FOR ADJUSTABILITY*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight:bolder;
+    color: #f9faf8;
+    line-height: 1.1;    
+}
+
+.hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero button {
+    background-color: #3882f6;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+
+.hero .placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* REVISIT FLEX PROPERTY FOR ADJUSTABILITY*/
+    flex: 0 1 auto;
+    min-width: 400px;
+    height: 250px;
+    background-color: gray;
+    
+}
+
+.hero .placeholder p {
+    color: #fff;
+    font-size: 18px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes h1 {
+    font-size: 36px;
+    color: #1f2937;
+    padding: 30px 0;
+}
+
+.boxes .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    /* REVISIT FOR ADJUSTABILITY - WRAP BOXES*/
+    gap: 40px;
+    padding-bottom: 30px;
+}
+
+.boxes .container .bt {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 120px;
+    gap: 10px;
+}
+
+.boxes .container .bt .box {
+    min-width: 100px;
+    min-height: 100px;
+    border: 1px solid #3882f6;
+    /* REVISIT ROUND CORNERS */
+}
+
+.boxtext {
+    font-size: 12px;
+    text-align: center;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    padding: 60px 0px;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.quote div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 600px;
+    /* REVISIT FOR ADJUSTABILITY*/
+}
+
+.quote .inspired {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    align-self: flex-start;
+}
+
+.quote .Thor {
+    font-size: 24px;
+    font-weight: bold;
+    /* Check google fonts - require link for bold font? */
+    align-self: flex-end;
+}
+
+.action {
+    padding: 50px 100px;
+}
+
+.action .container {
+    background-color: #3882f6;
+    padding: 20px 40px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.action .container h2 {
+    font-weight: 24px;;
+}
+
+.action .container button {
+    background-color: #3882f6;
+    color: #fff;
+    border: 1px solid #fff;
+    /* RONDED CORNERS */
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 5px 10px;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #fff;
+    font-size: 12px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}

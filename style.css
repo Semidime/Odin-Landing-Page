@@ -1,4 +1,5 @@
 /* CHECK FONT  https://fonts.google.com/specimen/Roboto?query=roboto*/
+/* Check box shadow */
 
 * {
     margin: 0;
@@ -17,8 +18,10 @@
 }
 
 .header .container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    padding: 40px 100px;
+    padding: 40px 150px;
     justify-content: space-between;
     }
 
@@ -26,6 +29,7 @@
     color: #f9faf8;
     font-size: 24px;
     font-weight: bold;
+    padding-right: 20px;
 }
 
 .headerlinks {
@@ -40,22 +44,25 @@
     font-size: 18px;
 }
 
-/* INCREASE PADDING AT BOTTOM OF SECTION */
 .hero {
     background-color: #1f2937;
 }
 
 .hero .container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
-    /* SET MEDIA TO CONVERT TO COLUMN BELOW X WIDTH */
-    padding: 20px 100px;
+    flex-wrap: wrap;
+    padding: 20px 150px 100px 150px;
     justify-content: space-between;
-    gap: 16px;
+    align-items: stretch;
+    gap: 40px;
 }
 
 .hero .container .hero-main-text {
     flex: 1;
-    /* REVISIT FLEX PROPERTY FOR ADJUSTABILITY*/
+    min-width: 250px;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -64,7 +71,7 @@
 
 .hero h1 {
     font-size: 48px;
-    font-weight:bolder;
+    font-weight: bold;
     color: #f9faf8;
     line-height: 1.1;    
 }
@@ -77,21 +84,21 @@
 .hero button {
     background-color: #3882f6;
     color: #fff;
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 7px;
+    flex-shrink: 0;
+    height: 30px;
+    width: 110px;
+    padding: auto;
 }
 
 .hero .placeholder {
+    min-width: 450px;
+    height: 250px;
+    background-color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* REVISIT FLEX PROPERTY FOR ADJUSTABILITY*/
-    flex: 0 1 auto;
-    min-width: 400px;
-    height: 250px;
-    background-color: gray;
-    
 }
 
 .hero .placeholder p {
@@ -99,7 +106,10 @@
     font-size: 18px;
 }
 
-.boxes {
+.boxes .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 150px;    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,95 +118,108 @@
 
 .boxes h1 {
     font-size: 36px;
+    text-align: center;
     color: #1f2937;
     padding: 30px 0;
 }
 
-.boxes .container {
+.boxes .qc1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;    
-    /* REVISIT FOR ADJUSTABILITY - WRAP BOXES*/
     gap: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
-.boxes .container .bt {
+.boxes .qc1 .bt {
     display: flex;
     flex-direction: column;
+    align-items: center;
     flex-grow: 0;
-    width: 120px;
+    width: 170px;
     gap: 10px;
 }
 
-.boxes .container .bt .box {
-    min-width: 100px;
-    min-height: 100px;
-    border: 1px solid #3882f6;
-    /* REVISIT ROUND CORNERS */
+.boxes .qc1 .bt .box {
+    width: 170px;
+    height: 170px;
+    border: 5px solid #3882f6;
+    border-radius: 15px;
 }
 
 .boxtext {
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
 }
 
 .quote {
     background-color: #e5e7eb;
-    padding: 60px 0px;  
-    display: flex;  
-    justify-content: center;
-    align-items: center;
 }
 
-.quote div {
+.quote .container {
+    gap: 20px;
+    max-width: 1100px;
+    padding: 100px 150px;
+    margin: 0 auto;    
+}
+
+.quote .qc1 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 600px;
-    /* REVISIT FOR ADJUSTABILITY*/
+    Gap: 20px;
 }
 
 .quote .inspired {
     color: #1f2937;
+    min-width: 500px;
     font-size: 36px;
     font-style: italic;
+    flex-basis: auto;
     align-self: flex-start;
 }
 
 .quote .Thor {
     font-size: 24px;
     font-weight: bold;
-    /* Check google fonts - require link for bold font? */
     align-self: flex-end;
 }
 
-.action {
-    padding: 50px 100px;
-}
 
 .action .container {
+    max-width: 1200px;
+    padding: 0  150px;
+    margin: 0 auto;;
+    display: flex;
+    justify-content: space-between;
+}
+
+.action .ac1 {
     background-color: #3882f6;
-    padding: 20px 40px;
+    gap: 20px;
     color: #fff;
+    margin: 50px 0;
+    padding: 40px 80px;
+    flex: 1;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .action .container h2 {
-    font-weight: 24px;;
+    font-size: 24px;
 }
 
 .action .container button {
     background-color: #3882f6;
     color: #fff;
     border: 1px solid #fff;
-    /* RONDED CORNERS */
-    font-size: 18px;
-    font-weight: bolder;
-    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 7px;
+    flex-shrink: 0;
+    height: 30px;
+    width: 110px;
+    padding: auto;
 }
 
 .footer {

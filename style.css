@@ -9,7 +9,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
     min-width: 750px;
     margin: 0 auto;
     display: flex;
-    padding: 40px 100px;
+    padding: 20px 100px;
     justify-content: space-between;
     }
 
@@ -55,14 +55,33 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 100px 100px 100px;
-    justify-content: center;
+    justify-content: space-between;
     /* align-items: stretch; */
     gap: 40px;
 }
 
+/*
+Currently flex-wrap should apply at browser width f 1015px
+(sum of min-width of .hero-main-text, .placeholder, and gap value)
+
+Google Chrome applying flex-wrap at 1035px.  (Operating as expected in
+Firefox.) 
+
+Media query below increased to 1035px to accommodate. (No practical 
+effect, as currently below 1140px, and above 1015 px, there is 
+no additional space to allocate via justify-content on this element.
+
+Cause TBC
+*/
+@media(max-width: 1035px) {
+    .hero .container {
+    justify-content: center;
+    }
+}
+
 .hero .container .hero-main-text {
     flex: 1;
-    min-width: 250px;
+    min-width: 325px;
     max-width: 450px;
     display: flex;
     flex-direction: column;

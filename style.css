@@ -61,7 +61,7 @@ body {
 }
 
 /*
-Currently flex-wrap should apply at browser width f 1015px
+Currently flex-wrap should apply at browser width of 1015px
 (sum of min-width of .hero-main-text, .placeholder, and gap value)
 
 Google Chrome applying flex-wrap at 1035px.  (Operating as expected in

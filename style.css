@@ -12,15 +12,22 @@ body {
     line-height: 1.5; 
 }
 
+.container  {
+    max-width: 1200px;
+    min-width: 750px;
+    margin: 0 auto;
+    display: flex;    
+}
+
 .header {
     background-color: #1f2937;
 }
 
 .header .container {
-    max-width: 1200px;
+/*     max-width: 1200px;
     min-width: 750px;
     margin: 0 auto;
-    display: flex;
+    display: flex; */
     padding: 20px 100px;
     justify-content: space-between;
     }
@@ -49,10 +56,10 @@ body {
 }
 
 .hero .container {
-    max-width: 1200px;
+/*     max-width: 1200px; */
     min-width: 650px;
-    margin: 0 auto;
-    display: flex;
+/*     margin: 0 auto;
+    display: flex; */
     flex-wrap: wrap;
     padding: 20px 100px 100px 100px;
     justify-content: space-between;
@@ -128,11 +135,11 @@ Cause TBC
 }
 
 .boxes .container {
-    max-width: 1200px;
+/*     max-width: 1200px; */
     min-width: 630px;
-    margin: 0 auto;
+/*     margin: 0 auto; */
     padding: 0 110px;    
-    display: flex;
+ /*    display: flex; */
     flex-direction: column;
 }
 
@@ -182,7 +189,7 @@ Cause TBC
     max-width: 1100px;
     min-width: 630px;
     padding: 100px 110px;
-    margin: 0 auto;    
+/*     margin: 0 auto; */    
 }
 
 .quote .qc1 {
@@ -208,11 +215,11 @@ Cause TBC
 
 
 .action .container {
-    max-width: 1200px;
+/*     max-width: 1200px; */
     min-width: 650px;
     padding: 0  100px;
-    margin: 0 auto;;
-    display: flex;
+ /*    margin: 0 auto;;
+    display: flex; */
     justify-content: space-between;
 }
 
@@ -244,12 +251,13 @@ Cause TBC
     padding: auto;
 }
 
-.footer {
+.footer .container {
+    width: 100vw;
     background-color: #1f2937;
     color: #fff;
     font-size: 12px;
     height: 50px;
-    display: flex;
+/*     display: flex; */
     justify-content: center;
     align-items: center;    
 }
